@@ -1,3 +1,5 @@
+import pomfret from '../dist/images/pomfret.jpg';
+
 function makeMenu(){
     const menu = document.createElement('div');
     menu.classList.add('menu');
@@ -59,7 +61,8 @@ function makeMenuItem(item, notes) {
   
     const itemImage = document.createElement("img");
     itemImage.classList.add('menuImg');
-    itemImage.src = `../dist/images/${item.toLowerCase()}.jpg`;
+    // itemImage.src = `../dist/images/${item.toLowerCase()}.jpg`;
+    itemImage.src = pomfret;
     itemImage.alt = `Image of ${item}`;
   
     menuItem.appendChild(foodName);
