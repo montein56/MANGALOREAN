@@ -1,4 +1,4 @@
-import map from './images/map.png'
+import map from '../dist/images/map.png'
 
 function makeContact(){
     const contact = document.createElement('div');

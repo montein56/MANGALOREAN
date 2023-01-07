@@ -7,7 +7,7 @@ html, body{
     height: 100%;
 }
 body{
-  background-image: url('../src/images/mangyFood.jpg');
+  background-image: url('../dist/images/mangyFood.jpg');
   background-attachment: fixed;
 }
 
@@ -33,7 +33,7 @@ body{
         "nav";
     border: 2px solid black;
     padding: 25px;
-    background: url(../src/images/coconut.jpg);
+    background: url(../dist/images/coconut.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align-items: center;

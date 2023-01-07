@@ -1,7 +1,7 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
 import loadContactPage from "./contact";
-import helmet from './images/helmet.jpg';
+import helmet from '../dist/images/helmet.jpg';
 
 function createHeader(){
     const header = document.createElement("header");

@@ -59,7 +59,7 @@ function makeMenuItem(item, notes) {
   
     const itemImage = document.createElement("img");
     itemImage.classList.add('menuImg');
-    itemImage.src = `../src/images/${item.toLowerCase()}.jpg`;
+    itemImage.src = `../dist/images/${item.toLowerCase()}.jpg`;
     itemImage.alt = `Image of ${item}`;
   
     menuItem.appendChild(foodName);
