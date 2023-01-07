@@ -1,4 +1,4 @@
-import pomfret from '../dist/images/pomfret.jpg';
+// import pomfret from '../dist/images/pomfret.jpg';
 
 function makeMenu(){
     const menu = document.createElement('div');
@@ -7,7 +7,8 @@ function makeMenu(){
     menu.appendChild(
         makeMenuItem(
           "POMFRET",
-          "Pomfret fish is known for its delicate, flaky white flesh and mild, sweet flavor. It is considered a delicacy in many parts of Asia and is often served as a whole fish with its head and tail intact. The fish can be cooked in a variety of ways, including steaming, grilling, frying, and baking."
+          "Pomfret fish is known for its delicate, flaky white flesh and mild, sweet flavor. It is considered a delicacy in many parts of Asia and is often served as a whole fish with its head and tail intact. The fish can be cooked in a variety of ways, including steaming, grilling, frying, and baking.",
+          "./images/pomfret.jpg"
         )
       );
 
@@ -15,41 +16,41 @@ function makeMenu(){
       makeMenuItem(
         "GOLIBAJE",
         "Golibaje or Mangalore bajji is an Indian fried food made from various flours and curd. In Tulu Nadu region, it is known as golibaje. Other names for the dish include Mangalore baje. This is widely famous in Andhra Pradesh and Telangana as Mysore bonda/bajji.",
-        "golibaje"
+        "./images/golibaje.jpg"
       )
     );
     menu.appendChild(
       makeMenuItem(
         "KORIROTI",
         "Kori rotti is a spicy dish of Tulu Udupi-Mangalorean cuisine, a combination of red-chili and coconut milk based chicken curry and crisp, dry wafers made from boiled rice. Kori means chicken in Tulu.",
-        "koriroti"
+        "./images/koriroti.jpg"
       )
     );
     menu.appendChild(
       makeMenuItem(
         "GHEEROAST",
         "Chicken ghee roast is a popular Tuluva Mangalorean Chicken recipe whose origins go back to the town, Kundapur, close to Udupi. Chicken ghee roast is fiery red in colour, and has a tangy and spicy flavor with ghee and roasted spices.",
-        "gheeroast"
+        "./images/gheeroast.jpg"
       )
     );
     menu.appendChild(
       makeMenuItem(
         "NEERDOSA",
         "Neer dosa, literally meaning water dosa in Tulu is a crêpe prepared from rice batter. Neer dosa is a delicacy from Tulu Nadu and part of Mangalorean cuisine",
-        "neerdosa"
+        "./images/neerdosa.jpg"
       )
     );
     menu.appendChild(
       makeMenuItem(
         "PATHOLI",
         "Patholi (plural: Patoleo) are sweet stuffed rice rolls which are steamed wrapped in turmeric leaves. Since there’s a unique technique involved in this recipe, the preparation and cooking of this dish is laborious. It is vegan and since rice flour is the main ingredient, the dish is gluten free too.",
-        "patholi"
+        "./images/patholi.jpg"
       )
     );
 
     return menu;
 }
-function makeMenuItem(item, notes) {
+function makeMenuItem(item, notes, picture) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
   
@@ -61,8 +62,8 @@ function makeMenuItem(item, notes) {
   
     const itemImage = document.createElement("img");
     itemImage.classList.add('menuImg');
-    // itemImage.src = `../dist/images/${item.toLowerCase()}.jpg`;
-    itemImage.src = pomfret;
+    // itemImage.src = `./images/${item.toLowerCase()}.jpg`;
+    itemImage.src = picture;
     itemImage.alt = `Image of ${item}`;
   
     menuItem.appendChild(foodName);
