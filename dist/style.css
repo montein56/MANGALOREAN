@@ -17,10 +17,8 @@ body{
     "header"
     "main"
     "footer";
-    grid-template-rows: 20vw auto 8vh;
+    grid-template-rows: auto auto 8vh;
     height: 100vh;
-    margin: 0;
-    font-size: 100px;
     color: blueviolet;
 }
 
@@ -31,8 +29,7 @@ body{
     grid-template-areas:
         "restaurantName"
         "nav";
-    border: 2px solid black;
-    padding: 25px;
+    padding: 5px;
     background: url('../dist/images/coconut.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -43,18 +40,20 @@ body{
     grid-area: nav;
     display: flex;
     justify-content: space-around;
+    padding-top: 10vw;
 }
 
 .buttons{
     color: aliceblue;
     font-size: 3rem;
     font-weight: 700;
-    background-color:rgb(30, 78, 62);
+    background-color:rgb(64, 97, 207);
+    border-radius: 20px;
 }
 
 .buttons:hover{
-    color: rgba(94, 27, 7, 0.74);
-    background-color: rgb(153, 205, 50);
+    color: rgba(228, 221, 129, 0.74);
+    background-color: rgb(44, 55, 148);
     cursor: pointer;
 }
 
@@ -63,8 +62,7 @@ body{
     font-family: 'Oswald' sans-serif;
     font-size:6vw;
     font-weight: 700;
-    color: rgb(196, 13, 13);
-    padding:0 1rem;
+    color: rgb(13, 16, 196);
     margin: 0;
     text-align:start;
 }
@@ -83,10 +81,10 @@ body{
 .home p{
     display: flex;
     font-family: 'Oswald', sans-serif;
-    font-size:4vw;
+    font-size:3vw;
     font-weight: 200;
     color: beige;
-    background-color: rgb(11, 58, 58, .8);
+    background-color: rgba(28, 66, 136, 0.8);
 }
 .home{
   padding: 0 25vw;
@@ -120,9 +118,9 @@ body{
 
 /* CONTACT */
 .contact{
-  margin: 5vx 0 0 0;
-  padding:0 0 0 6vw;
+  padding:6vw;
   width:70vw;
+  height: 100%;
 }
 .contact h2{
   color: rgb(170, 10, 10);
@@ -134,6 +132,7 @@ body{
 .map{
   width: 80%;
   aspect-ratio: 1;
+  margin-top: 2vw;
 }
 
 /* FOOTER */
@@ -142,20 +141,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
     margin-top: auto;
+    background-color:white;
   }
-
+.footer p{
+    font-size: 2rem;
+    color:black;
+}
 .footerImage{
   width: 3vw;
   padding: 0 2vw;
+  /* background-color: rgba(28, 66, 136, 0.3); */
 }
 
 @media (max-width: 1030px) {
-  #container{
-    grid-template-rows: 15vw auto 8vh;
   }
   .buttons{
     font-size: 3vw;
@@ -171,39 +170,35 @@ body{
     padding: 0;
   }
   .contact{
-    padding:0 0 0 1vw;  
+    padding:2vw 0 0 4vw;  
     width:100vw;
   }
   .map{
     width: 80%;
   }
-  .footer{
-    font-size: 1rem;
+  .footer p{
+    font-size: 1.3rem;
   }
-}
-@media(max-width: 790px){
-  #container{
-    grid-template-rows: 23vw auto 8vh;
-  }
-  header{
-    height: 10vw;
-  }
+
+@media(max-width: 800px){
   .restaurantName{
     padding: 0;
   }
   .home p{
-font-size: 8vw;
+    font-size: 4vw;
   }
   .menu{
     padding: 0 5vw;
   }
 
   .menu p{
-    font-size: 2.2vh;
+    font-size: 2vh;
   }
-  
-  .footer{
-    font-size: .7rem;
+  .contact{
+    padding: 1vw 0 0 3vw;
+  }
+  .footer p{
+    font-size: .8rem;
   }
   }
 
@@ -217,6 +212,9 @@ font-size: 8vw;
   .menu p, .home p{
     font-size: 5vw;
   }
+  .footer p{
+    font-size: .6rem;
+  } 
   }
 
   @media(max-width: 400px){

@@ -77,7 +77,7 @@ function createFooter(){
   footer.classList.add('footer');
 
   const footerTextL = document.createElement('p');
-  footerTextL.innerHTML = 'A Mangy project';
+  footerTextL.innerHTML = 'a mangy project';
   footer.appendChild(footerTextL);
 
   const footerImage = document.createElement('img');
